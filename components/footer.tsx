@@ -1,5 +1,21 @@
 import Link from "next/link"
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin, Clock, ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Badge } from "@/components/ui/badge"
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Car,
+  Shield,
+  Award,
+  Users,
+} from "lucide-react"
 
 export default function Footer() {
   return (
@@ -10,169 +26,207 @@ export default function Footer() {
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold-500 rounded-full blur-3xl transform translate-x-48 translate-y-48"></div>
       </div>
 
-      <div className="container mx-auto px-4 py-16 relative z-10">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-4 md:grid-cols-2">
-          {/* Company Info */}
-          <div className="lg:col-span-1">
-            <div className="mb-6">
-              <h3 className="text-2xl font-bold text-gold-400 mb-2">PremiumCars</h3>
-              <div className="w-12 h-1 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full"></div>
-            </div>
-            <p className="mb-6 text-gray-300 leading-relaxed">
-              Your trusted partner for premium car rental services. We deliver exceptional experiences with our luxury
-              fleet and professional service.
-            </p>
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="group h-10 w-10 rounded-full bg-navy-800 flex items-center justify-center hover:bg-gold-500 transition-all duration-300"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5 text-gray-300 group-hover:text-navy-900 transition-colors" />
-              </a>
-              <a
-                href="#"
-                className="group h-10 w-10 rounded-full bg-navy-800 flex items-center justify-center hover:bg-gold-500 transition-all duration-300"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-5 w-5 text-gray-300 group-hover:text-navy-900 transition-colors" />
-              </a>
-              <a
-                href="#"
-                className="group h-10 w-10 rounded-full bg-navy-800 flex items-center justify-center hover:bg-gold-500 transition-all duration-300"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5 text-gray-300 group-hover:text-navy-900 transition-colors" />
-              </a>
-            </div>
-          </div>
+      <div className="relative z-10">
+        {/* Main Footer Content */}
+        <div className="container mx-auto px-4 py-16">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-4">
+            {/* Company Info */}
+            <div className="lg:col-span-1">
+              <Link href="/" className="flex items-center mb-6">
+                <span className="text-3xl font-bold">
+                  Premium<span className="text-gold-500">Cars</span>
+                </span>
+              </Link>
+              <p className="text-gray-300 mb-6 leading-relaxed">
+                Your trusted partner for premium car rental services since 2010. We provide exceptional vehicles and
+                service for all your transportation needs.
+              </p>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-bold mb-6 text-white">Quick Links</h3>
-            <ul className="space-y-3">
-              {[
-                { href: "/", label: "Home" },
-                { href: "/fleet", label: "Our Fleet" },
-                { href: "/booking", label: "Book Now" },
-                { href: "/about", label: "About Us" },
-                { href: "/contact", label: "Contact" },
-                { href: "/faqs", label: "FAQs" },
-              ].map((link) => (
-                <li key={link.href}>
+              {/* Key Features */}
+              <div className="space-y-3 mb-8">
+                {[
+                  { icon: Shield, text: "Comprehensive Insurance" },
+                  { icon: Award, text: "Premium Fleet" },
+                  { icon: Users, text: "24/7 Support" },
+                ].map((feature, index) => (
+                  <div key={index} className="flex items-center text-sm text-gray-300">
+                    <feature.icon className="h-4 w-4 mr-3 text-gold-500" />
+                    {feature.text}
+                  </div>
+                ))}
+              </div>
+
+              {/* Social Links */}
+              <div className="flex space-x-4">
+                {[
+                  { icon: Facebook, href: "#", label: "Facebook" },
+                  { icon: Twitter, href: "#", label: "Twitter" },
+                  { icon: Instagram, href: "#", label: "Instagram" },
+                  { icon: Linkedin, href: "#", label: "LinkedIn" },
+                ].map((social, index) => (
                   <Link
-                    href={link.href}
-                    className="group flex items-center text-gray-300 hover:text-gold-400 transition-colors duration-200"
+                    key={index}
+                    href={social.href}
+                    className="group h-10 w-10 rounded-full bg-navy-800 flex items-center justify-center hover:bg-gold-500 transition-all duration-300"
+                    aria-label={social.label}
                   >
-                    <ArrowRight className="h-4 w-4 mr-2 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-200" />
-                    <span className="group-hover:translate-x-1 transition-transform duration-200">{link.label}</span>
+                    <social.icon className="h-5 w-5 text-gray-300 group-hover:text-navy-900 transition-colors" />
                   </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="text-lg font-bold mb-6 text-white">Our Services</h3>
-            <ul className="space-y-3">
-              {[
-                "Self-drive Rentals",
-                "Chauffeur Services",
-                "Airport Pickup",
-                "Long-Term Rentals",
-                "Corporate Accounts",
-                "Event Transportation",
-              ].map((service) => (
-                <li key={service} className="flex items-center text-gray-300">
-                  <div className="w-2 h-2 bg-gold-500 rounded-full mr-3 flex-shrink-0"></div>
-                  {service}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-bold mb-6 text-white">Get In Touch</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start group">
-                <div className="h-10 w-10 rounded-lg bg-navy-800 flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-gold-500 transition-colors duration-300">
-                  <MapPin className="h-5 w-5 text-gray-300 group-hover:text-navy-900 transition-colors" />
-                </div>
-                <div>
-                  <p className="text-gray-300 leading-relaxed">
-                    123 Business Avenue
-                    <br />
-                    City Center, Country
-                  </p>
-                </div>
-              </li>
-              <li className="flex items-center group">
-                <div className="h-10 w-10 rounded-lg bg-navy-800 flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-gold-500 transition-colors duration-300">
-                  <Phone className="h-5 w-5 text-gray-300 group-hover:text-navy-900 transition-colors" />
-                </div>
-                <a href="tel:+1234567890" className="text-gray-300 hover:text-gold-400 transition-colors">
-                  +1 (234) 567-890
-                </a>
-              </li>
-              <li className="flex items-center group">
-                <div className="h-10 w-10 rounded-lg bg-navy-800 flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-gold-500 transition-colors duration-300">
-                  <Mail className="h-5 w-5 text-gray-300 group-hover:text-navy-900 transition-colors" />
-                </div>
-                <a href="mailto:info@premiumcars.com" className="text-gray-300 hover:text-gold-400 transition-colors">
-                  info@premiumcars.com
-                </a>
-              </li>
-              <li className="flex items-start group">
-                <div className="h-10 w-10 rounded-lg bg-navy-800 flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-gold-500 transition-colors duration-300">
-                  <Clock className="h-5 w-5 text-gray-300 group-hover:text-navy-900 transition-colors" />
-                </div>
-                <div className="text-gray-300">
-                  <p>Mon-Fri: 8am-8pm</p>
-                  <p>Sat-Sun: 9am-6pm</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Newsletter Signup */}
-        <div className="mt-16 pt-8 border-t border-navy-700">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-            <div>
-              <h3 className="text-xl font-bold mb-2">Stay Updated</h3>
-              <p className="text-gray-300">Subscribe to our newsletter for exclusive offers and updates.</p>
+                ))}
+              </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3 lg:min-w-96">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-lg bg-navy-800 border border-navy-600 text-white placeholder-gray-400 focus:outline-none focus:border-gold-500 transition-colors"
-              />
-              <button className="px-6 py-3 bg-gradient-to-r from-gold-500 to-gold-600 text-navy-900 font-semibold rounded-lg hover:from-gold-600 hover:to-gold-700 transition-all duration-300 transform hover:scale-105">
-                Subscribe
-              </button>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="text-xl font-bold mb-6 text-gold-400">Quick Links</h3>
+              <ul className="space-y-4">
+                {[
+                  { name: "Home", href: "/" },
+                  { name: "Our Fleet", href: "/fleet" },
+                  { name: "About Us", href: "/about" },
+                  { name: "Contact", href: "/contact" },
+                  { name: "FAQs", href: "/faqs" },
+                  { name: "Terms & Conditions", href: "/terms" },
+                ].map((link, index) => (
+                  <li key={index}>
+                    <Link
+                      href={link.href}
+                      className="text-gray-300 hover:text-gold-400 transition-colors duration-300 flex items-center group"
+                    >
+                      <span className="w-2 h-2 bg-gold-500 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h3 className="text-xl font-bold mb-6 text-gold-400">Our Services</h3>
+              <ul className="space-y-4">
+                {[
+                  { name: "Self-drive Rentals", href: "/fleet" },
+                  { name: "Chauffeur Services", href: "/contact" },
+                  { name: "Airport Pickup", href: "/contact" },
+                  { name: "Long-term Rentals", href: "/contact" },
+                  { name: "Corporate Solutions", href: "/contact" },
+                  { name: "Wedding Cars", href: "/contact" },
+                ].map((service, index) => (
+                  <li key={index}>
+                    <Link
+                      href={service.href}
+                      className="text-gray-300 hover:text-gold-400 transition-colors duration-300 flex items-center group"
+                    >
+                      <Car className="h-4 w-4 mr-3 text-gold-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      {service.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Contact Info & Newsletter */}
+            <div>
+              <h3 className="text-xl font-bold mb-6 text-gold-400">Get In Touch</h3>
+
+              {/* Contact Information */}
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start">
+                  <div className="h-10 w-10 rounded-lg bg-gold-500/20 flex items-center justify-center mr-4 mt-1">
+                    <MapPin className="h-5 w-5 text-gold-500" />
+                  </div>
+                  <div>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      123 Premium Street
+                      <br />
+                      Business District
+                      <br />
+                      City, State 12345
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center">
+                  <div className="h-10 w-10 rounded-lg bg-gold-500/20 flex items-center justify-center mr-4">
+                    <Phone className="h-5 w-5 text-gold-500" />
+                  </div>
+                  <div>
+                    <p className="text-gray-300 text-sm">+1 (555) 123-4567</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center">
+                  <div className="h-10 w-10 rounded-lg bg-gold-500/20 flex items-center justify-center mr-4">
+                    <Mail className="h-5 w-5 text-gold-500" />
+                  </div>
+                  <div>
+                    <p className="text-gray-300 text-sm">info@premiumcars.com</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="h-10 w-10 rounded-lg bg-gold-500/20 flex items-center justify-center mr-4 mt-1">
+                    <Clock className="h-5 w-5 text-gold-500" />
+                  </div>
+                  <div>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      Mon - Fri: 8:00 AM - 8:00 PM
+                      <br />
+                      Sat - Sun: 9:00 AM - 6:00 PM
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Newsletter Signup */}
+              <div className="bg-navy-800/50 rounded-xl p-6 backdrop-blur-sm border border-navy-700/50">
+                <h4 className="text-lg font-semibold mb-3 text-gold-400">Stay Updated</h4>
+                <p className="text-gray-300 text-sm mb-4">
+                  Subscribe to our newsletter for exclusive offers and updates.
+                </p>
+                <div className="flex flex-col space-y-3">
+                  <Input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="bg-navy-700/50 border-navy-600 text-white placeholder:text-gray-400 focus:border-gold-500"
+                  />
+                  <Button className="bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold">Subscribe</Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-navy-700">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-            <p className="text-sm text-gray-400">
-              &copy; {new Date().getFullYear()} PremiumCars. All rights reserved. Crafted with excellence.
-            </p>
-            <div className="flex flex-wrap gap-6">
-              <Link href="/terms" className="text-sm text-gray-400 hover:text-gold-400 transition-colors">
-                Terms & Conditions
-              </Link>
-              <Link href="/privacy" className="text-sm text-gray-400 hover:text-gold-400 transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/sitemap" className="text-sm text-gray-400 hover:text-gold-400 transition-colors">
-                Sitemap
-              </Link>
+        <div className="border-t border-navy-800">
+          <div className="container mx-auto px-4 py-6">
+            <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
+              <div className="flex flex-col items-center space-y-2 md:flex-row md:space-y-0 md:space-x-6">
+                <p className="text-gray-400 text-sm">© 2024 PremiumCars. All rights reserved.</p>
+                <div className="flex items-center space-x-4 text-sm">
+                  <Link href="/terms" className="text-gray-400 hover:text-gold-400 transition-colors">
+                    Privacy Policy
+                  </Link>
+                  <span className="text-gray-600">•</span>
+                  <Link href="/terms" className="text-gray-400 hover:text-gold-400 transition-colors">
+                    Terms of Service
+                  </Link>
+                  <span className="text-gray-600">•</span>
+                  <Link href="/contact" className="text-gray-400 hover:text-gold-400 transition-colors">
+                    Support
+                  </Link>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-2">
+                <Badge variant="outline" className="border-gold-500/30 text-gold-400 bg-gold-500/10">
+                  Premium Service
+                </Badge>
+                <Badge variant="outline" className="border-green-500/30 text-green-400 bg-green-500/10">
+                  24/7 Support
+                </Badge>
+              </div>
             </div>
           </div>
         </div>
