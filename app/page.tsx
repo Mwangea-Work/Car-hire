@@ -234,48 +234,180 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-navy-800 py-16 text-white">
+      <section className="bg-gradient-to-br from-navy-50 to-white py-20">
         <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
-            <Badge className="mb-2 bg-gold-500 text-navy-900">Our Advantages</Badge>
-            <h2 className="mb-4 text-3xl font-bold">Why Choose Us</h2>
-            <p className="mx-auto max-w-2xl text-gray-300">
+          <div className="mb-16 text-center">
+            <Badge className="mb-4 bg-navy-100 text-navy-700 hover:bg-navy-200">Our Advantages</Badge>
+            <h2 className="mb-6 text-4xl font-bold text-navy-800">Why Choose PremiumCars</h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-600 leading-relaxed">
               We pride ourselves on providing exceptional service and premium vehicles to ensure your journey is
-              comfortable and memorable.
+              comfortable, safe, and memorable. Here's what sets us apart from the competition.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {/* Advantage 1 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4 rounded-full bg-navy-700 p-4">
-                <Award className="h-8 w-8 text-gold-500" />
+            <div className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+              <div className="absolute top-0 right-0 h-32 w-32 rounded-full bg-gradient-to-br from-gold-100 to-gold-200 opacity-20 transform translate-x-16 -translate-y-16"></div>
+              <div className="relative">
+                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-gold-500 to-gold-600 shadow-lg">
+                  <Award className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="mb-4 text-2xl font-bold text-navy-800">Premium Fleet</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Our meticulously maintained vehicles undergo regular inspections and professional detailing to ensure
+                  the highest standards of comfort, safety, and luxury for every journey.
+                </p>
+                <div className="mt-6 flex items-center text-sm font-medium text-gold-600">
+                  <span>Learn more</span>
+                  <svg
+                    className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
-              <h3 className="mb-2 text-xl font-semibold">Premium Fleet</h3>
-              <p className="text-gray-300">
-                Our vehicles are regularly maintained and cleaned to ensure your comfort and safety.
-              </p>
             </div>
 
             {/* Advantage 2 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4 rounded-full bg-navy-700 p-4">
-                <Shield className="h-8 w-8 text-gold-500" />
+            <div className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+              <div className="absolute top-0 right-0 h-32 w-32 rounded-full bg-gradient-to-br from-navy-100 to-navy-200 opacity-20 transform translate-x-16 -translate-y-16"></div>
+              <div className="relative">
+                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-navy-600 to-navy-700 shadow-lg">
+                  <Shield className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="mb-4 text-2xl font-bold text-navy-800">Comprehensive Protection</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Every rental includes full comprehensive insurance coverage, 24/7 roadside assistance, and emergency
+                  support to give you complete peace of mind throughout your journey.
+                </p>
+                <div className="mt-6 flex items-center text-sm font-medium text-navy-600">
+                  <span>Learn more</span>
+                  <svg
+                    className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
-              <h3 className="mb-2 text-xl font-semibold">Comprehensive Insurance</h3>
-              <p className="text-gray-300">
-                All our rentals come with comprehensive insurance coverage for your peace of mind.
-              </p>
             </div>
 
             {/* Advantage 3 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4 rounded-full bg-navy-700 p-4">
-                <ThumbsUp className="h-8 w-8 text-gold-500" />
+            <div className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+              <div className="absolute top-0 right-0 h-32 w-32 rounded-full bg-gradient-to-br from-green-100 to-green-200 opacity-20 transform translate-x-16 -translate-y-16"></div>
+              <div className="relative">
+                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-green-500 to-green-600 shadow-lg">
+                  <ThumbsUp className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="mb-4 text-2xl font-bold text-navy-800">Exceptional Service</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Our dedicated customer service team is available around the clock to assist you. From booking to
+                  return, we ensure a seamless and personalized experience every step of the way.
+                </p>
+                <div className="mt-6 flex items-center text-sm font-medium text-green-600">
+                  <span>Learn more</span>
+                  <svg
+                    className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
-              <h3 className="mb-2 text-xl font-semibold">24/7 Support</h3>
-              <p className="text-gray-300">
-                Our customer support team is available 24/7 to assist you with any queries or issues.
+            </div>
+          </div>
+
+          {/* Stats Section */}
+          <div className="mt-16 grid grid-cols-2 gap-8 lg:grid-cols-4">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-navy-800">10K+</div>
+              <div className="text-sm font-medium text-gray-600 uppercase tracking-wide">Happy Customers</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-navy-800">500+</div>
+              <div className="text-sm font-medium text-gray-600 uppercase tracking-wide">Premium Vehicles</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-navy-800">50+</div>
+              <div className="text-sm font-medium text-gray-600 uppercase tracking-wide">Locations</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-navy-800">24/7</div>
+              <div className="text-sm font-medium text-gray-600 uppercase tracking-wide">Customer Support</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Core Values */}
+      <section className="bg-navy-800 py-20 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-navy-800 via-navy-900 to-navy-800"></div>
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl transform -translate-x-48 -translate-y-48"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl transform translate-x-48 translate-y-48"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="mb-16 text-center">
+            <Badge className="mb-4 bg-gold-500/20 text-gold-400 border-gold-500/30">Our Foundation</Badge>
+            <h2 className="mb-6 text-4xl font-bold">Our Core Values</h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-300 leading-relaxed">
+              These fundamental principles guide everything we do and shape the exceptional experience we deliver to our
+              customers.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {/* Value 1 */}
+            <div className="group text-center">
+              <div className="mb-6 mx-auto h-20 w-20 rounded-full bg-gradient-to-br from-gold-500 to-gold-600 flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                <Award className="h-10 w-10 text-white" />
+              </div>
+              <h3 className="mb-4 text-xl font-bold">Excellence</h3>
+              <p className="text-gray-300 leading-relaxed">
+                We strive for perfection in every aspect of our service, from vehicle maintenance to customer
+                interactions.
+              </p>
+            </div>
+
+            {/* Value 2 */}
+            <div className="group text-center">
+              <div className="mb-6 mx-auto h-20 w-20 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                <Shield className="h-10 w-10 text-white" />
+              </div>
+              <h3 className="mb-4 text-xl font-bold">Trust</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Building lasting relationships through transparency, reliability, and consistent delivery of our
+                promises.
+              </p>
+            </div>
+
+            {/* Value 3 */}
+            <div className="group text-center">
+              <div className="mb-6 mx-auto h-20 w-20 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                <Users className="h-10 w-10 text-white" />
+              </div>
+              <h3 className="mb-4 text-xl font-bold">Customer Focus</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Your satisfaction is our priority. We listen, adapt, and continuously improve to exceed your
+                expectations.
+              </p>
+            </div>
+
+            {/* Value 4 */}
+            <div className="group text-center">
+              <div className="mb-6 mx-auto h-20 w-20 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                <Car className="h-10 w-10 text-white" />
+              </div>
+              <h3 className="mb-4 text-xl font-bold">Innovation</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Embracing new technologies and methods to enhance your rental experience and stay ahead of the curve.
               </p>
             </div>
           </div>
