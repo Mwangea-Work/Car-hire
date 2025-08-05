@@ -10,6 +10,7 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Mail, MapPin, Phone, Clock, MessageSquare } from "lucide-react"
+import Image from "next/image"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -34,15 +35,26 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-navy-800 py-16">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-3xl text-center text-white">
-            <h1 className="mb-4 text-4xl font-bold">Contact Us</h1>
-            <p className="mb-6 text-lg text-gray-300">
-              Have questions or need assistance? Our team is here to help. Reach out to us through any of the channels
-              below.
+     
+      <section className="relative bg-navy-800 py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/placeholder.svg?height=800&width=1920"
+            alt="Premium Cars headquarters"
+            fill
+            className="object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-800/70 to-navy-900/90"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="mx-auto max-w-4xl text-center text-white">
+            <Badge className="mb-4 bg-gold-500/20 text-gold-400 border-gold-500/30">Contact Us</Badge>
+            <h1 className="mb-6 text-5xl font-bold">Contact Premium Cars</h1>
+            <p className="text-xl text-gray-200 leading-relaxed">
+            Have questions or need assistance? Our team is here to help. Reach out to us through any of the channels
+            below.
             </p>
           </div>
         </div>

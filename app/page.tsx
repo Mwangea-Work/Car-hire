@@ -30,14 +30,14 @@ export default function Home() {
   return (
     <>
       {/* Hero Section with Parallax */}
-      <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+      <section className="relative flex min-h-[115vh] items-center justify-center overflow-hidden">
         <div ref={heroRef} className="absolute inset-0 z-0 will-change-transform">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="/car.jpg"
             alt="Luxury car on scenic road"
             fill
             priority
-            className="object-cover scale-110"
+            className="object-cover scale-100 sm:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-800/70 to-navy-900/90"></div>
         </div>
@@ -48,14 +48,14 @@ export default function Home() {
           </Badge>
           <h1 className="mb-8 text-4xl font-bold leading-tight md:text-6xl lg:text-7xl">
             Drive Your Dreams with{" "}
-            <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">Premium</span>{" "}
-            Cars
+            <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">Twende </span>{" "}
+            Rides
           </h1>
           <p className="mx-auto mb-10 max-w-3xl text-xl text-gray-200 leading-relaxed">
             Experience the ultimate in luxury and comfort with our premium fleet of vehicles. Whether for business or
             leisure, we have the perfect car for your journey.
           </p>
-          <div className="flex flex-col items-center justify-center space-y-6 sm:flex-row sm:space-x-6 sm:space-y-0">
+          <div className="flex flex-row items-center justify-center space-x-4">
             <Button
               asChild
               size="lg"
@@ -169,21 +169,21 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/E-class.jpg?height=400&width=600",
                 category: "Luxury",
                 name: "Mercedes E-Class",
                 price: "$120/day",
                 features: ["5 Seats", "Automatic", "Insurance", "GPS"],
               },
               {
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/BMW.webp?height=400&width=600",
                 category: "SUV",
                 name: "BMW X5",
                 price: "$150/day",
                 features: ["7 Seats", "Automatic", "Insurance", "GPS"],
               },
               {
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/toyota.jpg?height=400&width=600",
                 category: "Economy",
                 name: "Toyota Corolla",
                 price: "$60/day",
@@ -305,7 +305,7 @@ export default function Home() {
           </div>
 
           {/* Stats Section */}
-          <div className="mt-20 grid grid-cols-2 gap-8 lg:grid-cols-4">
+          {/* <div className="mt-20 grid grid-cols-2 gap-8 lg:grid-cols-4">
             {[
               { number: "10K+", label: "Happy Customers" },
               { number: "500+", label: "Premium Vehicles" },
@@ -317,12 +317,12 @@ export default function Home() {
                 <div className="text-sm font-medium text-gray-600 uppercase tracking-wide">{stat.label}</div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Our Core Values */}
-      <section className="bg-navy-800 py-20 text-white relative overflow-hidden">
+      {/* <section className="bg-navy-800 py-20 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-800 via-navy-900 to-navy-800"></div>
         <div className="absolute top-0 left-0 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl transform -translate-x-48 -translate-y-48"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl transform translate-x-48 translate-y-48"></div>
@@ -380,7 +380,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
       <section className="py-20">
@@ -411,7 +411,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/placeholder.svg?height=600&width=1920" alt="Luxury car interior" fill className="object-cover" />
+          <Image src="/premium.jpg?height=600&width=1920" alt="Luxury car interior" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-800/80 to-navy-900/90"></div>
         </div>
         <div className="container relative z-10 mx-auto px-4 text-center text-white">

@@ -51,7 +51,7 @@ export default function Header() {
                   isScrolled ? "text-navy-700" : "text-white",
                 )}
               >
-                Premium<span className="text-gold-500">Cars</span>
+                Twende<span className="text-gold-500">Rides</span>
               </span>
             </Link>
 

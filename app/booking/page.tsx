@@ -162,52 +162,66 @@ export default function BookingPage() {
   }
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen">
       {/* Header */}
-      <section className="bg-navy-800 py-12">
-        <div className="container mx-auto px-4">
-          <h1 className="text-center text-3xl font-bold text-white">Book Your Vehicle</h1>
-          <div className="mx-auto mt-6 max-w-3xl">
-            <div className="flex justify-between">
-              <div
-                className={`flex flex-1 flex-col items-center ${currentStep >= 1 ? "text-gold-400" : "text-gray-400"}`}
-              >
+      <section className="relative bg-navy-800 py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/car.jpg"
+            alt="Luxury car rental"
+            fill
+            className="object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-800/70 to-navy-900/90"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="mx-auto max-w-4xl text-center text-white">
+            <h1 className="mb-6 text-5xl font-bold">Book Your Vehicle</h1>
+            <p className="text-xl text-gray-200 leading-relaxed mb-8">
+              Reserve your perfect ride with our easy booking process
+            </p>
+            <div className="mx-auto max-w-3xl">
+              <div className="flex justify-between">
                 <div
-                  className={`flex h-10 w-10 items-center justify-center rounded-full ${currentStep >= 1 ? "bg-gold-500 text-navy-900" : "bg-gray-700 text-gray-300"}`}
+                  className={`flex flex-1 flex-col items-center ${currentStep >= 1 ? "text-gold-400" : "text-gray-400"}`}
                 >
-                  1
+                  <div
+                    className={`flex h-10 w-10 items-center justify-center rounded-full ${currentStep >= 1 ? "bg-gold-500 text-navy-900" : "bg-gray-700 text-gray-300"}`}
+                  >
+                    1
+                  </div>
+                  <span className="mt-2 text-sm">Select Vehicle</span>
                 </div>
-                <span className="mt-2 text-sm">Select Vehicle</span>
-              </div>
-              <div
-                className={`flex flex-1 flex-col items-center ${currentStep >= 2 ? "text-gold-400" : "text-gray-400"}`}
-              >
                 <div
-                  className={`flex h-10 w-10 items-center justify-center rounded-full ${currentStep >= 2 ? "bg-gold-500 text-navy-900" : "bg-gray-700 text-gray-300"}`}
+                  className={`flex flex-1 flex-col items-center ${currentStep >= 2 ? "text-gold-400" : "text-gray-400"}`}
                 >
-                  2
+                  <div
+                    className={`flex h-10 w-10 items-center justify-center rounded-full ${currentStep >= 2 ? "bg-gold-500 text-navy-900" : "bg-gray-700 text-gray-300"}`}
+                  >
+                    2
+                  </div>
+                  <span className="mt-2 text-sm">Add Options</span>
                 </div>
-                <span className="mt-2 text-sm">Add Options</span>
-              </div>
-              <div
-                className={`flex flex-1 flex-col items-center ${currentStep >= 3 ? "text-gold-400" : "text-gray-400"}`}
-              >
                 <div
-                  className={`flex h-10 w-10 items-center justify-center rounded-full ${currentStep >= 3 ? "bg-gold-500 text-navy-900" : "bg-gray-700 text-gray-300"}`}
+                  className={`flex flex-1 flex-col items-center ${currentStep >= 3 ? "text-gold-400" : "text-gray-400"}`}
                 >
-                  3
+                  <div
+                    className={`flex h-10 w-10 items-center justify-center rounded-full ${currentStep >= 3 ? "bg-gold-500 text-navy-900" : "bg-gray-700 text-gray-300"}`}
+                  >
+                    3
+                  </div>
+                  <span className="mt-2 text-sm">Your Details</span>
                 </div>
-                <span className="mt-2 text-sm">Your Details</span>
-              </div>
-              <div
-                className={`flex flex-1 flex-col items-center ${currentStep >= 4 ? "text-gold-400" : "text-gray-400"}`}
-              >
                 <div
-                  className={`flex h-10 w-10 items-center justify-center rounded-full ${currentStep >= 4 ? "bg-gold-500 text-navy-900" : "bg-gray-700 text-gray-300"}`}
+                  className={`flex flex-1 flex-col items-center ${currentStep >= 4 ? "text-gold-400" : "text-gray-400"}`}
                 >
-                  4
+                  <div
+                    className={`flex h-10 w-10 items-center justify-center rounded-full ${currentStep >= 4 ? "bg-gold-500 text-navy-900" : "bg-gray-700 text-gray-300"}`}
+                  >
+                    4
+                  </div>
+                  <span className="mt-2 text-sm">Confirmation</span>
                 </div>
-                <span className="mt-2 text-sm">Confirmation</span>
               </div>
             </div>
           </div>
@@ -801,13 +815,13 @@ export default function BookingPage() {
                         <Label htmlFor="payment">Payment Method</Label>
                         <div className="flex items-center space-x-4">
                           <div className="flex items-center space-x-2">
-                            <input type="radio" id="card" name="payment" defaultChecked />
+                            <input type="radio" id="card" name="payment" title="payment" defaultChecked />
                             <Label htmlFor="card" className="flex items-center">
                               <CreditCard className="mr-2 h-4 w-4" /> Credit Card
                             </Label>
                           </div>
                           <div className="flex items-center space-x-2">
-                            <input type="radio" id="paypal" name="payment" />
+                            <input type="radio" id="paypal" name="payment" title="payment" />
                             <Label htmlFor="paypal">PayPal</Label>
                           </div>
                         </div>

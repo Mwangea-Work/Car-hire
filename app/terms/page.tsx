@@ -1,16 +1,29 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
+import { Badge } from "@/components/ui/badge"
 
 export default function TermsPage() {
   return (
-    <div className="min-h-screen pt-20">
-      {/* Hero Section */}
-      <section className="relative bg-navy-800 py-12">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-3xl text-center text-white">
-            <h1 className="mb-4 text-4xl font-bold">Terms & Conditions</h1>
-            <p className="mb-6 text-lg text-gray-300">
-              Please read these terms and conditions carefully before using our services.
+    <div className="min-h-screen">
+      
+       {/* Hero Section */}
+       <section className="relative bg-navy-800 py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/placeholder.svg?height=800&width=1920"
+            alt="Premium Cars headquarters"
+            fill
+            className="object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-800/70 to-navy-900/90"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="mx-auto max-w-4xl text-center text-white">
+            <Badge className="mb-4 bg-gold-500/20 text-gold-400 border-gold-500/30">Terms & Conditions</Badge>
+            <h1 className="mb-6 text-5xl font-bold">Terms & Conditions</h1>
+            <p className="text-xl text-gray-200 leading-relaxed">
+            Please read these terms and conditions carefully before using our services.
             </p>
           </div>
         </div>
