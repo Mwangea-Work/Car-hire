@@ -304,83 +304,9 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Stats Section */}
-          {/* <div className="mt-20 grid grid-cols-2 gap-8 lg:grid-cols-4">
-            {[
-              { number: "10K+", label: "Happy Customers" },
-              { number: "500+", label: "Premium Vehicles" },
-              { number: "50+", label: "Locations" },
-              { number: "24/7", label: "Customer Support" },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl font-bold text-navy-800 mb-2">{stat.number}</div>
-                <div className="text-sm font-medium text-gray-600 uppercase tracking-wide">{stat.label}</div>
-              </div>
-            ))}
-          </div> */}
+          
         </div>
       </section>
-
-      {/* Our Core Values */}
-      {/* <section className="bg-navy-800 py-20 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-800 via-navy-900 to-navy-800"></div>
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl transform -translate-x-48 -translate-y-48"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl transform translate-x-48 translate-y-48"></div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="mb-16 text-center">
-            <Badge className="mb-4 bg-gold-500/20 text-gold-400 border-gold-500/30">Our Foundation</Badge>
-            <h2 className="mb-6 text-4xl font-bold">Our Core Values</h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-300 leading-relaxed">
-              These fundamental principles guide everything we do and shape the exceptional experience we deliver to our
-              customers.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {[
-              {
-                icon: Award,
-                title: "Excellence",
-                description:
-                  "We strive for perfection in every aspect of our service, from vehicle maintenance to customer interactions.",
-                gradient: "from-gold-500 to-gold-600",
-              },
-              {
-                icon: Shield,
-                title: "Trust",
-                description:
-                  "Building lasting relationships through transparency, reliability, and consistent delivery of our promises.",
-                gradient: "from-blue-500 to-blue-600",
-              },
-              {
-                icon: Users,
-                title: "Customer Focus",
-                description:
-                  "Your satisfaction is our priority. We listen, adapt, and continuously improve to exceed your expectations.",
-                gradient: "from-green-500 to-green-600",
-              },
-              {
-                icon: Car,
-                title: "Innovation",
-                description:
-                  "Embracing new technologies and methods to enhance your rental experience and stay ahead of the curve.",
-                gradient: "from-purple-500 to-purple-600",
-              },
-            ].map((value, index) => (
-              <div key={index} className="group text-center">
-                <div
-                  className={`mb-6 mx-auto h-20 w-20 rounded-full bg-gradient-to-br ${value.gradient} flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300`}
-                >
-                  <value.icon className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="mb-4 text-xl font-bold">{value.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* Testimonials */}
       <section className="py-20">
