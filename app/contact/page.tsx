@@ -41,7 +41,7 @@ export default function ContactPage() {
       <section className="relative bg-navy-800 py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1920"
+            src="/contact.jpg?height=800&width=1920"
             alt="Premium Cars headquarters"
             fill
             className="object-cover opacity-30"

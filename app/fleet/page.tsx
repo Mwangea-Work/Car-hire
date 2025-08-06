@@ -29,7 +29,7 @@ export default function FleetPage() {
       price: "$60/day",
       seats: 5,
       transmission: "Automatic",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/toyota.jpg?height=400&width=600",
     },
     {
       id: "honda-civic",
@@ -38,7 +38,7 @@ export default function FleetPage() {
       price: "$65/day",
       seats: 5,
       transmission: "Automatic",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/Honda.jpg?height=400&width=600",
     },
     {
       id: "ford-focus",
@@ -47,7 +47,7 @@ export default function FleetPage() {
       price: "$58/day",
       seats: 5,
       transmission: "Automatic",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/ford.jpg?height=400&width=600",
     },
     {
       id: "bmw-x5",
@@ -56,7 +56,7 @@ export default function FleetPage() {
       price: "$150/day",
       seats: 7,
       transmission: "Automatic",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/BMW.webp?height=400&width=600",
     },
     {
       id: "audi-q7",
@@ -65,7 +65,7 @@ export default function FleetPage() {
       price: "$160/day",
       seats: 7,
       transmission: "Automatic",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/q7.jpg?height=400&width=600",
     },
     {
       id: "range-rover-sport",
@@ -74,7 +74,7 @@ export default function FleetPage() {
       price: "$180/day",
       seats: 5,
       transmission: "Automatic",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/sport.jpg?height=400&width=600",
     },
     {
       id: "mercedes-e-class",
@@ -83,7 +83,7 @@ export default function FleetPage() {
       price: "$120/day",
       seats: 5,
       transmission: "Automatic",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/E-class.jpg?height=400&width=600",
     },
     {
       id: "audi-a6",
@@ -92,7 +92,7 @@ export default function FleetPage() {
       price: "$130/day",
       seats: 5,
       transmission: "Automatic",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/A6.avif?height=400&width=600",
     },
     {
       id: "bmw-7-series",
@@ -101,7 +101,7 @@ export default function FleetPage() {
       price: "$170/day",
       seats: 5,
       transmission: "Automatic",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/7series.avif?height=400&width=600",
     },
     {
       id: "mercedes-v-class",
@@ -110,7 +110,7 @@ export default function FleetPage() {
       price: "$180/day",
       seats: 8,
       transmission: "Automatic",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/vclass.jpg?height=400&width=600",
     },
     {
       id: "vw-transporter",
@@ -119,7 +119,7 @@ export default function FleetPage() {
       price: "$140/day",
       seats: 9,
       transmission: "Manual",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/vw.webp?height=400&width=600",
     },
   ]
 
@@ -171,7 +171,7 @@ export default function FleetPage() {
       <section className="relative bg-navy-800 py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=600&width=1920"
+            src="/fleet.jpg?height=600&width=1920"
             alt="Premium car fleet"
             fill
             className="object-cover opacity-30"
@@ -256,32 +256,37 @@ export default function FleetPage() {
           </Tabs>
         </div>
       </section>
+    
 
-      {/* CTA Section */}
-      <section className="bg-navy-800 py-20 text-white relative overflow-hidden">
+      <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/placeholder.svg?height=400&width=1920" alt="Car keys" fill className="object-cover opacity-20" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 to-navy-800/90"></div>
+          <Image src="/premium.jpg?height=600&width=1920" alt="Luxury car interior" fill className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-800/80 to-navy-900/90"></div>
         </div>
-        <div className="container mx-auto px-4 text-center relative z-10">
+        <div className="container relative z-10 mx-auto px-4 text-center text-white">
           <h2 className="mb-6 text-4xl font-bold">Ready to Book Your Perfect Vehicle?</h2>
           <p className="mx-auto mb-10 max-w-3xl text-xl text-gray-200 leading-relaxed">
             Contact our team for personalized assistance or special requirements. We're here to make your rental
             experience exceptional.
           </p>
-          <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-6 sm:space-y-0">
-            <Button asChild size="lg" className="bg-gold-500 text-navy-900 hover:bg-gold-600 px-8 py-4 font-semibold">
-              <Link href="/booking">Book Now</Link>
-            </Button>
-            <Button
+          <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+
+          <Button
+            asChild
+            size="lg"
+            className="bg-gold-500 text-navy-900 hover:bg-gold-600 px-8 py-4 text-lg font-semibold"
+          >
+            <Link href="/contact">Contact Us</Link>
+          </Button>
+          <Button
               asChild
               size="lg"
               variant="outline"
-              className="border-white/30 text-white hover:bg-white/10 bg-white/5 backdrop-blur-sm px-8 py-4 font-semibold"
+              className="border-white text-white hover:bg-white/10 bg-transparent"
             >
-              <Link href="/contact">Contact Us</Link>
+              <a href="tel:+254758311071">Call Us</a>
             </Button>
-          </div>
+            </div>
         </div>
       </section>
     </div>

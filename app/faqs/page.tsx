@@ -11,7 +11,7 @@ export default function FAQsPage() {
       <section className="relative bg-navy-800 py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1920"
+            src="/faq.jpg?height=800&width=1920"
             alt="Premium Cars headquarters"
             fill
             className="object-cover opacity-30"
@@ -307,27 +307,34 @@ export default function FAQsPage() {
           </div>
         </div>
       </section>
-
-      {/* Still Have Questions */}
-      <section className="bg-navy-800 py-16 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="mb-4 text-3xl font-bold">Still Have Questions?</h2>
-          <p className="mx-auto mb-8 max-w-2xl text-gray-300">
-            Our customer service team is available to assist you with any questions or concerns you may have.
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image src="/premium.jpg?height=600&width=1920" alt="Luxury car interior" fill className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-800/80 to-navy-900/90"></div>
+        </div>
+        <div className="container relative z-10 mx-auto px-4 text-center text-white">
+          <h2 className="mb-6 text-4xl font-bold">Still Have Questions?</h2>
+          <p className="mx-auto mb-10 max-w-3xl text-xl text-gray-200 leading-relaxed">
+          Our customer service team is available to assist you with any questions or concerns you may have.
           </p>
           <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-            <Button asChild size="lg" className="bg-gold-500 text-navy-900 hover:bg-gold-600">
-              <Link href="/contact">Contact Us</Link>
-            </Button>
-            <Button
+
+          <Button
+            asChild
+            size="lg"
+            className="bg-gold-500 text-navy-900 hover:bg-gold-600 px-8 py-4 text-lg font-semibold"
+          >
+            <Link href="/contact">Contact Us</Link>
+          </Button>
+          <Button
               asChild
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white/10 bg-transparent"
             >
-              <a href="tel:+1234567890">Call Us</a>
+              <a href="tel:+254758311071">Call Us</a>
             </Button>
-          </div>
+            </div>
         </div>
       </section>
     </div>

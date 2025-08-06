@@ -252,7 +252,7 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/placeholder.svg?height=600&width=1920" alt="Premium Cars office" fill className="object-cover" />
+          <Image src="/premium.jpg?height=600&width=1920" alt="Premium Cars office" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-800/80 to-navy-900/90"></div>
         </div>
         <div className="container relative z-10 mx-auto px-4 text-center text-white">

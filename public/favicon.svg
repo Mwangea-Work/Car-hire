@@ -1,0 +1,45 @@
+<svg width="280" height="80" viewBox="0 0 280 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle for logo mark -->
+  <circle cx="40" cy="40" r="35" fill="#FFD700" opacity="0.1"/>
+  
+  <!-- Car silhouette -->
+  <g transform="translate(15, 25)">
+    <!-- Car body -->
+    <path d="M5 25 L45 25 L45 20 L40 15 L35 15 L32 10 L18 10 L15 15 L10 15 L5 20 Z" 
+          fill="#FFD700" stroke="#FFD700" stroke-width="1"/>
+    
+    <!-- Car wheels -->
+    <circle cx="13" cy="28" r="4" fill="white" stroke="#FFD700" stroke-width="1"/>
+    <circle cx="37" cy="28" r="4" fill="white" stroke="#FFD700" stroke-width="1"/>
+    
+    <!-- Car details -->
+    <rect x="18" y="12" width="8" height="5" fill="white" opacity="0.8" rx="1"/>
+    <rect x="28" y="12" width="6" height="5" fill="white" opacity="0.8" rx="1"/>
+    
+    <!-- Speed lines -->
+    <line x1="48" y1="18" x2="55" y2="18" stroke="#FFD700" stroke-width="2" opacity="0.7"/>
+    <line x1="50" y1="22" x2="55" y2="22" stroke="#FFD700" stroke-width="2" opacity="0.5"/>
+    <line x1="48" y1="26" x2="53" y2="26" stroke="#FFD700" stroke-width="2" opacity="0.3"/>
+  </g>
+  
+  <!-- Text -->
+  <g transform="translate(90, 0)">
+    <!-- "Twende" text -->
+    <text x="0" y="32" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white">
+      Twende
+    </text>
+    
+    <!-- "Rides" text -->
+    <text x="0" y="58" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#FFD700">
+      Rides
+    </text>
+    
+    <!-- Underline accent -->
+    <line x1="0" y1="62" x2="70" y2="62" stroke="#FFD700" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="250" cy="20" r="2" fill="#FFD700" opacity="0.6"/>
+  <circle cx="260" cy="30" r="1.5" fill="#FFD700" opacity="0.4"/>
+  <circle cx="270" cy="25" r="1" fill="#FFD700" opacity="0.3"/>
+</svg>
