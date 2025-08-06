@@ -9,10 +9,10 @@ import WhatsAppButton from "@/components/whatsapp-button"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Premium Car Hire | Your Trusted Vehicle Rental Service",
+  title: "Twende Rides | Your Trusted Vehicle Rental Service",
   description:
     "Rent premium vehicles for any occasion. Self-drive, chauffeur services, airport pickup, and long-term rentals available.",
-    generator: 'v0.dev'
+    generator: 'version 1.0'
 }
 
 export default function RootLayout({
