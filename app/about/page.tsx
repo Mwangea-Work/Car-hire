@@ -11,7 +11,7 @@ export default function AboutPage() {
       <section className="relative bg-navy-800 py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/premium1.jpg?height=800&width=1920"
+            src="/premium1.webp?height=800&width=1920"
             alt="Premium Cars headquarters"
             fill
             className="object-cover opacity-30"
@@ -37,7 +37,7 @@ export default function AboutPage() {
             <div className="lg:w-1/2">
               <div className="relative h-[500px] w-full rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/industrial.jpg?height=600&width=800"
+                  src="/industrial.webp?height=600&width=800"
                   alt="Premium Cars showroom"
                   fill
                   className="object-cover"
@@ -124,7 +124,7 @@ export default function AboutPage() {
       {/* CTA Section (unchanged) */}
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/premium.jpg?height=600&width=1920" alt="Premium Cars office" fill className="object-cover" />
+          <Image src="/premium.webp?height=600&width=1920" alt="Premium Cars office" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-800/80 to-navy-900/90"></div>
         </div>
         <div className="container relative z-10 mx-auto px-4 text-center text-white">

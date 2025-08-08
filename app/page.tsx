@@ -33,7 +33,7 @@ export default function Home() {
       <section className="relative flex min-h-[115vh] items-center justify-center overflow-hidden">
         <div ref={heroRef} className="absolute inset-0 z-0 will-change-transform">
           <Image
-            src="/car.jpg"
+            src="/car.webp"
             alt="Luxury car on scenic road"
             fill
             priority
@@ -169,7 +169,7 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                image: "/E-class.jpg?height=400&width=600",
+                image: "/E-class.webp?height=400&width=600",
                 category: "Luxury",
                 name: "Mercedes E-Class",
                 price: "$120/day",
@@ -183,7 +183,7 @@ export default function Home() {
                 features: ["7 Seats", "Automatic", "Insurance", "GPS"],
               },
               {
-                image: "/toyota.jpg?height=400&width=600",
+                image: "/toyota.webp?height=400&width=600",
                 category: "Economy",
                 name: "Toyota Corolla",
                 price: "$60/day",
@@ -337,7 +337,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/premium.jpg?height=600&width=1920" alt="Luxury car interior" fill className="object-cover" />
+          <Image src="/premium.webp?height=600&width=1920" alt="Luxury car interior" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-800/80 to-navy-900/90"></div>
         </div>
         <div className="container relative z-10 mx-auto px-4 text-center text-white">

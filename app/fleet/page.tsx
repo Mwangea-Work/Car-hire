@@ -29,7 +29,7 @@ export default function FleetPage() {
       price: "$60/day",
       seats: 5,
       transmission: "Automatic",
-      image: "/toyota.jpg?height=400&width=600",
+      image: "/toyota.webp?height=400&width=600",
     },
     {
       id: "honda-civic",
@@ -38,7 +38,7 @@ export default function FleetPage() {
       price: "$65/day",
       seats: 5,
       transmission: "Automatic",
-      image: "/Honda.jpg?height=400&width=600",
+      image: "/Honda.webp?height=400&width=600",
     },
     {
       id: "ford-focus",
@@ -47,7 +47,7 @@ export default function FleetPage() {
       price: "$58/day",
       seats: 5,
       transmission: "Automatic",
-      image: "/ford.jpg?height=400&width=600",
+      image: "/ford.webp?height=400&width=600",
     },
     {
       id: "bmw-x5",
@@ -65,7 +65,7 @@ export default function FleetPage() {
       price: "$160/day",
       seats: 7,
       transmission: "Automatic",
-      image: "/q7.jpg?height=400&width=600",
+      image: "/q7.webp?height=400&width=600",
     },
     {
       id: "range-rover-sport",
@@ -74,7 +74,7 @@ export default function FleetPage() {
       price: "$180/day",
       seats: 5,
       transmission: "Automatic",
-      image: "/sport.jpg?height=400&width=600",
+      image: "/sport.webp?height=400&width=600",
     },
     {
       id: "mercedes-e-class",
@@ -83,7 +83,7 @@ export default function FleetPage() {
       price: "$120/day",
       seats: 5,
       transmission: "Automatic",
-      image: "/E-class.jpg?height=400&width=600",
+      image: "/E-class.webp?height=400&width=600",
     },
     {
       id: "audi-a6",
@@ -110,7 +110,7 @@ export default function FleetPage() {
       price: "$180/day",
       seats: 8,
       transmission: "Automatic",
-      image: "/vclass.jpg?height=400&width=600",
+      image: "/vclass.webp?height=400&width=600",
     },
     {
       id: "vw-transporter",
@@ -171,7 +171,7 @@ export default function FleetPage() {
       <section className="relative bg-navy-800 py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/fleet.jpg?height=600&width=1920"
+            src="/fleet.webp?height=600&width=1920"
             alt="Premium car fleet"
             fill
             className="object-cover opacity-30"
@@ -260,7 +260,7 @@ export default function FleetPage() {
 
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/premium.jpg?height=600&width=1920" alt="Luxury car interior" fill className="object-cover" />
+          <Image src="/premium.webp?height=600&width=1920" alt="Luxury car interior" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-800/80 to-navy-900/90"></div>
         </div>
         <div className="container relative z-10 mx-auto px-4 text-center text-white">

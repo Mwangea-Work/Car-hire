@@ -11,7 +11,7 @@ export default function FAQsPage() {
       <section className="relative bg-navy-800 py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/faq.jpg?height=800&width=1920"
+            src="/faq.webp?height=800&width=1920"
             alt="Premium Cars headquarters"
             fill
             className="object-cover opacity-30"
@@ -309,7 +309,7 @@ export default function FAQsPage() {
       </section>
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/premium.jpg?height=600&width=1920" alt="Luxury car interior" fill className="object-cover" />
+          <Image src="/premium.webp?height=600&width=1920" alt="Luxury car interior" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-800/80 to-navy-900/90"></div>
         </div>
         <div className="container relative z-10 mx-auto px-4 text-center text-white">

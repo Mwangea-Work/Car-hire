@@ -41,7 +41,7 @@ export default function ContactPage() {
       <section className="relative bg-navy-800 py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/contact.jpg?height=800&width=1920"
+            src="/contact.webp?height=800&width=1920"
             alt="Premium Cars headquarters"
             fill
             className="object-cover opacity-30"
@@ -79,7 +79,7 @@ export default function ContactPage() {
                 <div className="relative z-10 flex items-end justify-center h-full w-full">
                   <div className="w-full h-full flex items-end justify-center">
                     <Image
-                      src="/contact.webp"
+                      src="/contact1.webp"
                       alt="Contact person"
                       width={500} // Set appropriate width
                       height={500} // Set appropriate height
